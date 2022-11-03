@@ -3,12 +3,15 @@ import {View, Text, SafeAreaView} from 'react-native'
 
 import Styles from '../constants/Styles'
 
-import {Card} from '@rneui/themed'
+import {Card, useTheme} from '@rneui/themed'
 
-const ScreenB = props => {
+const ScreenB = (props) => {
+  const { theme } = useTheme()
   return (
     <SafeAreaView style={Styles.fullScreen}>
-      <View style={Styles.screen}>
+      <View
+        style={[Styles.screen, { backgroundColor: theme.colors.background }]}
+      >
         <Card>
           <Text>Hello MoTO</Text>
         </Card>
@@ -17,4 +20,4 @@ const ScreenB = props => {
   )
 }
 
-export default ScreenB
+export default ScreenB;
