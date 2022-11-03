@@ -1,0 +1,8 @@
+{
+  "APP_GREETING": "Hello from DEV",
+  "API_BASE_URL": "https://api.dev.demoenv.ro",
+  "FRONTEND_BASE_URL": "https://app.dev.demoenv.ro",
+  "ADJUST_ENVIRONMENT": "sandbox",
+  "BUNDLE_ID": "com.demoenv.dev",
+  "DOMAIN": "*.dev.demoenv.ro"
+}
