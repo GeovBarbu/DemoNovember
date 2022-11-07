@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">DemoEnv</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">ddadc99d-aad6-4260-8522-02dbce5d5f8c</string>
+    <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">DO_NOT_ASK_JAVASCRIPT</string>
+    <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
 </resources>
