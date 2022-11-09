@@ -1,4 +1,4 @@
-apply plugin: "com.android.internal.application"
+apply plugin: "com.android.application"
 
 import com.android.build.OutputFile
 import org.apache.tools.ant.taskdefs.condition.Os
@@ -142,6 +142,7 @@ android {
         versionCode 1
         versionName "1.0"
         buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString()
+        buildConfigField("String", "JAVA_HOME", "/Library/Java/JavaVirtualMachines/jdk-11.0.17.1.jdk/Contents/Home")
 
         if (isNewArchitectureEnabled()) {
             // We configure the CMake build only if you decide to opt-in for the New Architecture.
